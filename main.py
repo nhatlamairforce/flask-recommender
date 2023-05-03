@@ -5,8 +5,9 @@ from pandas import json_normalize
 import requests
 from sklearn.neighbors import NearestNeighbors
 from scipy.sparse import csr_matrix
+from flask_cors import CORS
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route('/',methods = ['GET'])
 def login():
