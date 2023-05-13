@@ -70,7 +70,7 @@ def login():
         neighbour_ids.pop(0)
         return neighbour_ids
     
-    similar_ids = find_similar_items(id, X, k=4)
+    similar_ids = find_similar_items(id, X, k=6)
     listid = []
     for i in similar_ids:
         listid.append(int(i))
